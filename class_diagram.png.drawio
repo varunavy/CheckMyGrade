@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.6.3">
+  <diagram name="Page-1" id="A4OaRKl33VhgVCFfGWhX">
+    <mxGraphModel dx="1351" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="shape=mxgraph.uml.class;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" value="&lt;b&gt;Student&lt;/b&gt;&#xa;--------------&#xa;email_address&#xa;first_name&#xa;last_name&#xa;course_id&#xa;grade&#xa;marks&#xa;--------------&#xa;add_new_student()&#xa;delete_student()&#xa;update_student_record()&#xa;display_all_students()&#xa;search_student()&#xa;sort_by_marks()&#xa;sort_by_email()&#xa;check_my_grades()" vertex="1">
+          <mxGeometry height="280" width="220" x="300" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=mxgraph.uml.class;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="&lt;b&gt;Course&lt;/b&gt;&#xa;--------------&#xa;course_id&#xa;course_name&#xa;description&#xa;credits&#xa;--------------&#xa;add_new_course()&#xa;delete_new_course()&#xa;modify_course()&#xa;display_all_courses()" vertex="1">
+          <mxGeometry height="220" width="220" x="600" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=mxgraph.uml.class;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="&lt;b&gt;Professor&lt;/b&gt;&#xa;--------------&#xa;professor_id&#xa;professor_name&#xa;rank&#xa;course_id&#xa;--------------&#xa;add_new_professor()&#xa;delete_professor()&#xa;modify_professor_details()&#xa;display_all_professors()" vertex="1">
+          <mxGeometry height="220" width="220" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=mxgraph.uml.class;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" value="&lt;b&gt;Grades&lt;/b&gt;&#xa;--------------&#xa;grade_id&#xa;grade&#xa;marks_range&#xa;--------------&#xa;get_letter_grade()&#xa;add_grade()&#xa;delete_grade()&#xa;modify_grade()&#xa;display_grade_report()&#xa;average_score()&#xa;median_score()" vertex="1">
+          <mxGeometry height="260" width="220" x="300" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="shape=mxgraph.uml.class;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;" value="&lt;b&gt;LoginUser&lt;/b&gt;&#xa;--------------&#xa;user_id&#xa;password&#xa;role&#xa;--------------&#xa;register()&#xa;login()&#xa;logout()&#xa;change_password()&#xa;display_all_users()" vertex="1">
+          <mxGeometry height="220" width="220" x="600" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="7" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;fontStyle=1;fontSize=10;" target="3" value="HAS-A&#xa;(enrolls in)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#9673a6;fontStyle=1;fontSize=10;" target="5" value="HAS-A&#xa;(has grade)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#82b366;fontStyle=1;fontSize=10;" target="3" value="HAS-A&#xa;(teaches)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;fontStyle=1;fontSize=10;" target="2" value="HAS-A&#xa;(authenticates)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
